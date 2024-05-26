@@ -1,3 +1,5 @@
+"use client";
+
 import { RotatingLines } from "react-loader-spinner";
 
 const Loading = () => {
