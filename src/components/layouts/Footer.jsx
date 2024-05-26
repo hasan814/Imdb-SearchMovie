@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <footer>
+    <footer className="mt-20">
       <div className="flex items-center justify-between">
         <p>
           Developed by <span>hasan moosavi </span>&copy;

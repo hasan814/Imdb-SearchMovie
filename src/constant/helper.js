@@ -8,6 +8,6 @@ export const navLinks = [
 
 export const navbarLinks = [
   { title: "Trending", param: "fetchTrending" },
-  { title: "Top Rated", param: "fetchTopRating" },
+  { title: "Top Rated", param: "fetchTopRated" },
   {},
 ];
