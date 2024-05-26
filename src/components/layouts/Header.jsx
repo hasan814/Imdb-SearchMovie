@@ -3,6 +3,7 @@ import { navLinks } from "@/constant/helper";
 
 import MenuBtn from "../elements/MenuBtn";
 import Link from "next/link";
+import DarkModeSwitch from "../modules/DarkModeSwitch";
 
 const Header = () => {
   return (
@@ -12,12 +13,15 @@ const Header = () => {
           <MenuBtn key={uuidv4()} link={link} />
         ))}
       </div>
-      <Link href={"/"} className="flex gap-1 items-center">
-        <span className="text-2xl font-bold bg-amber-500 py-1 px-2 rounded-lg">
-          IMDB
-        </span>
-        <span className="text-xl hidden sm:inline">Clone</span>
-      </Link>
+      <div className="flex items-center gap-4">
+        <DarkModeSwitch />
+        <Link href={"/"} className="flex gap-1 items-center">
+          <span className="text-2xl font-bold bg-amber-500 py-1 px-2 rounded-lg">
+            IMDB
+          </span>
+          <span className="text-xl hidden sm:inline">Clone</span>
+        </Link>
+      </div>
     </div>
   );
 };
