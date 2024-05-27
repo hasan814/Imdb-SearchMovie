@@ -20,7 +20,7 @@ export default function RootLayout({ children }) {
         <Providers>
           <Header />
           <Navbar />
-          <main>{children}</main>
+          <main style={{ height: "80vh" }}>{children}</main>
           <Footer />
         </Providers>
       </body>

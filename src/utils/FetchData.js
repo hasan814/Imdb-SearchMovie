@@ -12,3 +12,12 @@ export const fetchData = async (genre) => {
   const results = data.results;
   return results;
 };
+
+export const fetchDataById = async (id) => {
+  console.log(id);
+  const response = await fetch(
+    `https://api.themoviedb.org/3/movie/${id}?api_key=${process.env.API_KEY}`
+  );
+  const data = await response.json();
+  return data;
+};
