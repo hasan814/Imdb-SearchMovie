@@ -21,3 +21,11 @@ export const fetchDataById = async (id) => {
   const data = await response.json();
   return data;
 };
+
+export const fetchSearchData = async (searchTerm) => {
+  const response = await fetch(
+    `https://api.themoviedb.org/3/search/movie?api_key=${process.env.API_KEY}&query=${searchTerm}&language=en-US&include_adult=false`
+  );
+  const data = await response.json();
+  return data;
+};

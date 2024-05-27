@@ -2,9 +2,9 @@ import { Inter } from "next/font/google";
 
 import "./globals.css";
 import Header from "@/components/layouts/Header";
-import Footer from "@/components/layouts/Footer";
 import Providers from "@/providers/providers";
 import Navbar from "@/components/elements/Navbar";
+import Searchbox from "@/components/modules/Searchbox";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -20,8 +20,9 @@ export default function RootLayout({ children }) {
         <Providers>
           <Header />
           <Navbar />
-          <main style={{ height: "80vh" }}>{children}</main>
-          <Footer />
+          <Searchbox />
+          <main style={{ height: "100vh" }}>{children}</main>
+          {/* <Footer /> */}
         </Providers>
       </body>
     </html>
