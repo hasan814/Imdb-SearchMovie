@@ -5,6 +5,9 @@ const nextConfig = {
       { protocol: "https", hostname: "image.tmdb.org", pathname: "**" },
     ],
   },
+  experimental: {
+    missingSuspenseWithCSRBailout: false,
+  },
 };
 
 export default nextConfig;
